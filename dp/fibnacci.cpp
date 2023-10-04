@@ -21,7 +21,7 @@ int main()
 
 
 
-// 3-Tabulation method 
+// 3-Tabulation method (bottom up approach)
 // #include<iostream>
 // #include<vector>
 // using namespace std;
@@ -34,7 +34,7 @@ int main()
 //     {
 //         dp[i] = dp[i-1] + dp[i-2];
 //     }
-//     return dp[n];
+//     return dp[n]; 
 // }
 // int main()
 // {
