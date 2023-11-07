@@ -1,3 +1,5 @@
+// Isko aur optimize karna hai 
+
 #include<iostream>
 using namespace std;
 bool isPrime(int n)

@@ -2,7 +2,7 @@
 using namespace std;
 int apofnumber(int n)
 {
-   int ans = (3 * n + 7);
+   int ans = (4 * n + 7);
    return ans;
    
 }
