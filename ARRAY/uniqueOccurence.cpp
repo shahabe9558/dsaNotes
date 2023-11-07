@@ -35,11 +35,4 @@ int main()
 {
  int arr[10] = {2, 2, 5, 10, 1, 2, 10, 5, 10, 2};
  bool ans = uniqueOccerne(arr, 10);
- if(ans)
- {
-    cout << "Not Unique occernce";
- }
- else{
-    cout << "Unique occurence";
- }
 }
