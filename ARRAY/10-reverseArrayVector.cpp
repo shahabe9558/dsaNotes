@@ -3,7 +3,7 @@
 using namespace std;
 void revrse(vector<int> &v, int s)
 {
-  //  int s = 0;
+  
    int e = v.size()-1;
    while(s <= e)
    {
@@ -20,7 +20,7 @@ int main()
   v.push_back(5);
   
   cout << "Reverse of array is ";
-  revrse(v, 3);
+  revrse(v, 0);
   for(int i:v)
   {
     cout << i << " "; 

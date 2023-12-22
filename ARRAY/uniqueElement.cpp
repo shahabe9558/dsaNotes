@@ -51,7 +51,8 @@ void uniqueFirst(int arr[], int n)
 int main()
 {
    int arr[7] = {6, 2, 5, 2, 2, 6, 6};
-   cout << multipleOk(arr, 7, 3);
+   uniqueElement(arr,7);
+//    cout << multipleOk(arr, 7, 3);
 
 // uniqueFirst(arr, 7);
 }
