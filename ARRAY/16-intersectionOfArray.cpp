@@ -1,5 +1,8 @@
 #include<iostream> 
+#include<set>
+#include<algorithm>
 using namespace std;
+
 
 // TC = O(N*2)
 // SC = O(1)
@@ -12,7 +15,8 @@ void intersect(int arr1[], int arr2[], int n1, int n2)
       if(arr1[i] == arr2[j])
       {
         cout << arr1[i] << " ";
-        arr2[j] = INT_MIN;
+        // ye isliye kar rahe hai ki koi agla element bhi match na kar jayen 
+        arr2[j] = INT64_MIN;
       }
     }
   }
@@ -22,25 +26,29 @@ void intersect(int arr1[], int arr2[], int n1, int n2)
 // SC = O(1)
 void intersect2(int arr1[], int arr2[], int n1, int n2)
 {
-   int i=0, j=0;
-   while (i<n1 && j<n2)
-   {
+  //  firstly sort the array 
+  set<int> ans;
+  sort(arr1, arr1 + n1);
+  sort(arr2, arr2 + n2);
+  int i =0, j = 0;
+  while(i<n1 && j <n2)
+  {
     if(arr1[i] < arr2[j])
     {
       i++;
     }
     else if(arr1[i] == arr2[j])
     {
-      cout << arr1[i] << " ";
+      ans.insert(arr1[i]);
       i++;
       j++;
     }
-    else
-    {
+    else{
       j++;
     }
-   }
-   
+  }
+  cout << "Total intersetion count is =" << ans.size();
+
 }
 int main()
 {
