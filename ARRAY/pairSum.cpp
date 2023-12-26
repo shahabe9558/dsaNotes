@@ -1,36 +1,37 @@
 #include<iostream>
 using namespace std;
-// TC = O(N*2)
-void pairSum(int arr[], int n, int sum)
-{
-    for(int i=0; i<n; i++)
-    {
-        for(int j= i+1; j<n; j++)
-        {
-            if((arr[i] + arr[j]) == sum)
-            {
-                cout << arr[i] << " " << arr[j];
-            }
-        }
-        cout << endl;
-    }
-}
-// void pairSum2(int arr[], int n, int sum)
+// // TC = O(N*2)
+// void pairSum(int arr[], int n, int sum)
 // {
-    
 //     for(int i=0; i<n; i++)
 //     {
-//       int j = i+1;
-//       if((arr[i] + arr[j]) == sum)
-//       {
-//         cout << arr[i] << " " << arr[j];
-        
-//       }
-//       else{
-//         i++;
-//       }
+//         for(int j= i+1; j<n; j++)
+//         {
+//             if((arr[i] + arr[j]) == sum)
+//             {
+//                 cout << arr[i] << " " << arr[j];
+//             }
+//         }
+//         cout << endl;
 //     }
 // }
+void pairSum2(int arr[], int n, int sum)
+{
+    int i =0; 
+    int j = n -1;
+    while(i < j)
+    {
+        if(arr[i] + arr[j] == sum)
+        {
+            cout << arr[i] << " " << arr[j] << endl;
+            i++;
+            j--;
+        }
+        else{
+            j--;
+        }
+    }
+}
 int main()
 {
     int arr[5] = {1,2,3,4,5};
