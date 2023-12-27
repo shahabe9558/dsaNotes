@@ -1,4 +1,5 @@
 #include<iostream>
+#include<algorithm>
 using namespace std;
 // // TC = O(N*2)
 // void pairSum(int arr[], int n, int sum)
@@ -17,15 +18,20 @@ using namespace std;
 // }
 void pairSum2(int arr[], int n, int sum)
 {
+    sort(arr, arr+n);
     int i =0; 
     int j = n -1;
     while(i < j)
     {
         if(arr[i] + arr[j] == sum)
         {
-            cout << arr[i] << " " << arr[j] << endl;
+         cout << arr[i] << " " << arr[j] << endl;
+         i++;
+         j--;
+        }
+        else if(arr[i] < arr[j])
+        {
             i++;
-            j--;
         }
         else{
             j--;
@@ -34,10 +40,10 @@ void pairSum2(int arr[], int n, int sum)
 }
 int main()
 {
-    int arr[5] = {1,2,3,4,5};
-    int sum = 5;
+    int arr[4] = {1,5, 7, 1};
+    int sum = 6;
     // pairSum(arr, 5, sum);
-    pairSum2(arr, 5, sum);
+    pairSum2(arr, 4, sum);
 }
 
 
