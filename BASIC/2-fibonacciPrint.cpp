@@ -7,7 +7,7 @@ int main()
     cin >> n;
     int a1 = 0, a2 = 1;
     cout << a1 << " " << a2 <<" ";
-    for(int i = 1; i<=n; i++)
+    for(int i = 1; i<n-1; i++)
     {
         int nextNum = a1 + a2;
         cout << nextNum << " ";

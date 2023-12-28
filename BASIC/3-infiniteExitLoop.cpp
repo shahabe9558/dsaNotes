@@ -8,7 +8,7 @@ int main()
         {
         case 1: cout << "Continue" << endl;
             // break;
-            exit(1);
+            exit(0);
         
         default:
             break;
