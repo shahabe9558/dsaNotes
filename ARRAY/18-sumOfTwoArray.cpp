@@ -26,8 +26,8 @@ void sumOfTwoArray(int arr1[], int n, int arr2[], int m)
 }
 int main()
 {
-    int arr1[4] = {1,2,3,4};
-    int arr2[4] = {5,6,7,8};
+    int arr1[3] = {5,6,3};
+    int arr2[3] = {8,4,2};
 
-    sumOfTwoArray(arr1, 4, arr2, 4);
+    sumOfTwoArray(arr1, 3, arr2, 3);
 }
