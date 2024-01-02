@@ -42,4 +42,4 @@ function sumOfTwo(a, b)
 
 const a = [4,3,3,8];
 const b = [2,2,7,5,3,3];
-sumOfTwo(a,b);
+sumOfTwo(a,b);  
