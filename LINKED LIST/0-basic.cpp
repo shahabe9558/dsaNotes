@@ -54,8 +54,6 @@ class Node{
    }
 
    void insertAtPosition(Node* & head, int position, int d) {
-
-
     //insert at Start
     // if(position == 1) {
     //     insertAtHead(head, d);

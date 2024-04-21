@@ -35,8 +35,10 @@ int main()
     cin >> b;
 
     int totalSetBitsA = totalBits(a);
+    cout << totalSetBitsA << endl;
 
     int totalSetBitsB = totalBits(b);
+    cout << totalSetBitsB << endl;
     int total = totalSetBitsA + totalSetBitsB;
     cout << "Total set bit is = " << total;
 }

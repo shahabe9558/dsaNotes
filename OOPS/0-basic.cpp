@@ -154,10 +154,7 @@ cout << b.timetoCompleate <<endl;
     /*
     
     //   Shallow Copy constructor    
-
-    
      Hero hero1;
-
      hero1.setHealth(12);
      hero1.setLevel('F');
      char name[7] = "Babbar";

@@ -46,13 +46,24 @@ int main()
 // using namespace std;
 // void moveNegative(int arr[], int size)
 // {
-//     int negativeIndex =0;
-//     for(int i=0; i<size; i++){
-//         if(arr[i] > 0){
-//             swap(arr[i], arr[negativeIndex]);
-//             negativeIndex++;
+//     // int negativeIndex =0;
+//     // for(int i=0; i<size; i++){
+//     //     if(arr[i] > 0){
+//     //         swap(arr[i], arr[negativeIndex]);
+//     //         negativeIndex++;
+//     //     }
+//     // }
+//     int postiveIndex = 0;
+//     for(int i =0; i<size; i++)
+//     {
+//         if(arr[i] < 0)
+//         {
+//             swap(arr[i], arr[postiveIndex]);
+//             postiveIndex++;
 //         }
 //     }
+    
+
 // }
 
 // void printArray(int arr[], int n)

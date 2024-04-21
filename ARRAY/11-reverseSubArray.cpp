@@ -3,7 +3,7 @@ using namespace std;
 
 void subArray(int arr[], int n, int l, int r)
 {
-    while(l < r && r > l)
+    while(l < r)
     {
         swap(arr[l-1], arr[r-1]);
         l++;
@@ -22,7 +22,7 @@ int main()
 {
     int arr[7] = {1, 2, 3, 4, 5, 6, 7};
     int l = 2;
-    int r =4;
+    int r = 4;
     subArray(arr, 7, l, r);
     printArray(arr, 7);
 }

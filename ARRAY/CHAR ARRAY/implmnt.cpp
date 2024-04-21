@@ -37,9 +37,8 @@ int main()
     str[1] = '\0';
 
     cout << "Your name is " << str << endl;  // Shahabe Alam nhi print hoga bas Shahabe print hoga 
-
+    
     // char name[20];
-
     // cout << "Enter the name" << endl;
     // cin >> name;
     // name[2] = '\0';

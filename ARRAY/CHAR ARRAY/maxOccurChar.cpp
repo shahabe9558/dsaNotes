@@ -41,7 +41,5 @@ char getMaxOccur(string s)
 int main()
 {
     string str = "aabbccc";
-
     cout <<"Max occuring char is = " << getMaxOccur(str);
-
 }

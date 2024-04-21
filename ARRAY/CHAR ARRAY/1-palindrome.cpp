@@ -35,7 +35,7 @@ int main()
     char name[20];
     cin >> name;
     
-    tolowerCase(name);
+    // tolowerCase(name);
 
     if(isPalindrome(name, 5))
     {

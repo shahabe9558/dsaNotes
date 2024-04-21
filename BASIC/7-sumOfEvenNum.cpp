@@ -2,23 +2,20 @@
 using namespace std;
 int sumOfEven(int n)
 {
-    int ans = 0;
-    int ans2 = 0;
-    for(int i=1; i<=n; i++)
+    int oddSum = 0;
+    int evenSum = 0;
+    for(int i = 1; i<=n; i++)
     {
-        if(i %2 == 0)
+        if(i % 2 == 0)
         {
-            ans = ans + i;
-        }
-        else
-        {
-            ans2 = ans2 + i;
+            evenSum += i;
+        }else{
+            oddSum += i;
         }
     }
-
-    cout << "odd sum is = " <<  ans2 << endl;
-    cout << "Even sum is = ";
-    return ans;
+    cout << "odd sum is = " <<  oddSum << endl;
+    cout << "Even sum is = " << evenSum << endl;
+    return oddSum;
 }
 int main()
 {

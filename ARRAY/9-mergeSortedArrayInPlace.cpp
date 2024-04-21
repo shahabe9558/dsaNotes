@@ -3,7 +3,7 @@
 using namespace std;
 void mergeTwoArray(int arr1[], int n, int arr2[], int m)
 {
-   int left = n -1;
+   int left = n-1;
    int right = 0;
    while(left >= 0 && right < m)
    {

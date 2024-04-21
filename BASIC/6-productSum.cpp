@@ -33,7 +33,7 @@ int main()
     cout << "Product is = " << product << endl;
     int sum = sumOfNum(n);
     cout << "sum is = " << sum << endl;
-    int diff = product - sum;
+    int diff = product - sum;7
     cout << diff;
    
 }
