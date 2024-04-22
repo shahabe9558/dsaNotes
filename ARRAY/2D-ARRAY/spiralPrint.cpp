@@ -48,8 +48,6 @@ void spiralPrint(int arr[][4], int nrow, int mcol)
         }
         startingCol++;
         cout << endl;
-
-
     }
 }
 int main()
