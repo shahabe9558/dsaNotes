@@ -1,13 +1,17 @@
-#include<iostream>
-#include<math.h>
-#include<vector>
-#include<algorithm>
+#include <iostream>
 using namespace std;
-int main(){
-   vector<int> v;
-   v.push_back(1);
-   v.push_back(424);
-   v.push_back(3);
-   v.push_back(44);
-   std :: cout << sort(v.begin(), v.end());
+void update(string s)
+{
+   for(int i = 0; i<s.length(); i++)    
+   {
+      s[i] = s[i] + 1;
+      cout << s[i];
+   }
+}
+int main()
+{
+   string str = "Shahabe";
+   update(str);
+   cout << endl;
+   cout << str;
 }

@@ -29,5 +29,4 @@ int main()
     y.set(3,3);
     x.show();
     y.show();
-
 }
