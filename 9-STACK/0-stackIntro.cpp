@@ -1,32 +1,26 @@
-// Stack using STL 
-#include<iostream>
-#include<stack>
-
+#include <iostream> 
 using namespace std;
 class Stack{
    public:
-   int top;
    int size;
+   int top;
    int *arr;
-   // creating a constructor 
+   // deinfing the constructor 
    Stack(int size)
    {
       this->size = size;
       this->top = -1;
-      arr = new int[size]; // creating dyanamically array 
+      arr = new int[size];
    }
-   void push(int element)
+   void push(int ele)
    {
-      if(size-top > 1)
+      if(size - top > 1)
       {
-         // cout << "top is = " << top << endl;
-         // cout << "Size is = " << size << endl;
          top++;
-         arr[top] = element; 
+         arr[top] = ele;
       }
-      else
-      {
-         cout << "stack is overflow" << endl;
+      else{
+         cout << "Stack is full" << endl;
       }
    }
    void pop()
@@ -35,79 +29,58 @@ class Stack{
       {
          top--;
       }
-      else
-      cout << "Stack is under flow" << endl;
+      else{
+         cout << "Stack is undeflow" << endl;
+      }
    }
    int peak()
    {
-      if(top >=0)
+      if(top >= 0)
       {
          return arr[top];
-      } 
-      return 0;
+      }
+      else{
+         cout << "No element found" << endl;
+      }
    }
-   bool isEmpty()
+   bool empty()
    {
       if(top < 0)
-      return true;
+      {
+         return true;
+      }
       else
-      return false;
+      {
+         return false;
+      }
    }
    int sizeOf()
    {
       if(top >= 0)
       {
-        return top + 1;
+         return top + 1;
       }
-      else
-      return 0;
+      else{
+         return 0;
+      }
    }
 };
 int main()
 {
-    Stack st(5);
-    st.push(8);
-    st.push(12);
-    st.push(14);
-    st.push(16);
-    st.push(18);
-    cout << st.sizeOf() << endl;
-
-   //  st.pop();
-   //  st.pop();
-   //  st.pop();
-   //  st.pop();
-   //  st.pop();
-   //  cout << st.sizeOf() << endl;         
-   //  cout << st.isEmpty();
-
-
-
-
-
-
-
-
-   // stack<int> s;
-   // stack<int> s1;
-
-   // s.push(33);
-   // s.push(44);
-   // s.push(55);
-   // s.push(66);
-
-   // s1.push(1);
-   // s1.push(2);
-   // s1.push(3);
-   // // s1.push(4);
-
-   // s.swap(s1); // swap the content 
-
-   // cout << s.top() << endl;
-   // cout << s.empty() << endl;
-   // cout << s.size() << endl;
-
-   // // cout << s.swap(66, 44) << endl; //  dekhna hai isko 
-   
-   
+   Stack s(5);
+   s.push(1);
+   s.push(2);
+   s.push(3);
+   s.push(4);
+   s.push(9);
+   cout << s.peak() << endl;
+   cout << s.sizeOf() << endl;
+   while(!s.empty())
+   {
+      cout << s.peak() << " ";
+      s.pop();
+   }
 }
+
+
+

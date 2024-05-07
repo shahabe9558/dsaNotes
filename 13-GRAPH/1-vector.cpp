@@ -8,7 +8,7 @@ void addEdge(vector<vector<int>>& adj, int u, int v)
 }
 void print(vector<vector<int>>& adj)
 {
-  for(int i =0; i<adj.size(); i++)
+  for(int i = 0; i<adj.size(); i++)
   {
     cout << i << "-> ";
     for(int j =0; j<adj[i].size(); j++)
