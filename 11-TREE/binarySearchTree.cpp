@@ -10,7 +10,7 @@ class Node{
 
    Node(int d)
    {
-    this->data = d;
+    this->data = d; 
     this->left = NULL;
     this->right = NULL;
    }
@@ -70,8 +70,7 @@ void levelOrderTraversal(Node* root)
               q.push(temp->right);
             }
         }
-    }
-
+    }  
 }
 
 void postOrder(Node* root)
