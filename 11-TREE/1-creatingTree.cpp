@@ -168,4 +168,8 @@ int main()
    inorder(root);
    cout << "The hight is " << hightOfTree(root) << endl;
    // Traversal(root);
+   pair<int, int> ans;
+   ans = dimeterMehtod(root);
+   cout << "The dimeter is " << ans.first << endl;
+   cout << "The hight is " << ans.second << endl;
 } 
