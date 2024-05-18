@@ -1,7 +1,6 @@
 #include<iostream>
 #include<stack>
 using namespace std;
-
 void pushAtButtom(stack<int> &s, int x)
 {
    if(s.empty())
@@ -11,17 +10,13 @@ void pushAtButtom(stack<int> &s, int x)
    }
    int num = s.top();
    s.pop();
-
    pushAtButtom(s, x);
    s.push(num);
 
 }
-// using namespace std;
 int main()
 {
   stack<int> s;
-
-
   s.push(8);
   s.push(1);
   s.push(2);
