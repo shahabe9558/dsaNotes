@@ -77,11 +77,6 @@ int main()
 
 
 
-
-
-
-
-
 // 1- recursion method 
 // #include<iostream>
 // using namespace std;
