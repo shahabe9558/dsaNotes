@@ -60,6 +60,6 @@ int main()
     cin >> n;
     // vector<int> dp(n + 1, -1);
     // base case 
-    int ans = fibSpace(n);
+    int ans = fib(n);
     cout << "The total number of wAYS TO CLIM ON  the top of stars is = " << ans;
 }
