@@ -24,6 +24,26 @@ class Graph{
             cout << endl;
         }
     }
+    void bfs2(int srcNod){
+        vector<int> vis(adj.size(), false);
+        queue<int> q;
+        q.push(srcNod);
+        vis[srcNod] = true;
+        while(!q.empty())
+        {
+            int frontNode = q.front();
+            q.pop();
+            cout << frontNode << endl;
+            for(auto i : adj[frontNode])
+            {
+                if(!vis[i])
+                {
+                    q.push(i);
+                    vis[i] = true;
+                }
+            }
+        }
+    }
     void bfsTraversal(int srcNode)
     {
         vector<int> visited(adj.size(), false);
@@ -43,7 +63,6 @@ class Graph{
                     visited[i] = true;
                 }
             }
-
         }
     }
 };

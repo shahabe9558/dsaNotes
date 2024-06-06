@@ -28,7 +28,7 @@ void printarray(int arr3[], int n)
     {
         cout <<arr3[i] <<" ";
     }
-}
+}   
 int main()
 {
     int arr1[3] = {1,3,5};

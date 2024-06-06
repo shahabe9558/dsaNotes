@@ -46,7 +46,7 @@ Node* reverseLinkedList(Node* &head)
   Node* chhotaHead = reverseLinkedList(head->next);
   head->next->next = head;
 
-  head-next = NULL;
+  head->next = NULL;
   
   return chhotaHead;
 }

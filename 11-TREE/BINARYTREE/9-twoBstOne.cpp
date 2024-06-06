@@ -1,5 +1,4 @@
 #include <iostream>
-#include <vector>
 using namespace std;
 class Node{
     public : 
@@ -29,8 +28,9 @@ Node* buildTree(Node* root, int data)
     }
     return root;
 }
-void takingInput(Node* &root)
+void takingInput(Node* root)
 {
+    cout << "Enter the data for root node" << endl;
     int data; 
     cin >> data;
     while(data != -1)
@@ -39,26 +39,21 @@ void takingInput(Node* &root)
         cin >> data;
     }
 }
-void inorder(Node* root, vector<Node*> &node)
+void inorder(Node* root)
 {
     // base case    
     if(root == NULL)
     return;
-    inorder(root->left, node);
-    node.push_back(root);
-    inorder(root->right, node);
+    inorder(root->left);
+    cout << root->data << " ";
+    inorder(root->right);
 }
 int main()
 {
-    Node* root = NULL;
-    cout << "Enter the data for root node" << endl;
-    takingInput(root);
-    vector<Node*> node;
-    inorder(root, node);
-    int size = node.size();
-    for(int i = 0; i<size; i++){
-        node[i]->left = NULL;
-        node[i]->right = node[i + 1];
-    }
-
+    Node* root1 = NULL;
+    Node* root2 = NULL;
+    takingInput(root1);
+    inorder(root1);
+    takingInput(root1);
+    inorder(root2);
 }

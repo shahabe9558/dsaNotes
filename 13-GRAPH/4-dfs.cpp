@@ -114,6 +114,15 @@ class Graph{
             }
         }
     }
+    void defRecur(int node, vector<int> visited){
+        visited[node] = 1;
+        for(auto i : adj[node]){
+            if(!visited[i]){
+                cout << node << " ";
+                defRecur(i, visited);
+            }
+        }
+    }
 };
 int main()
 {
@@ -129,6 +138,7 @@ int main()
         cin >> u >> v;
         g.addEdge(u, v);
     }
+    vector<int> visited(m, 0);
     g.print();
-    g.dfs(0);
+    g.defRecur(0, visited);
 }

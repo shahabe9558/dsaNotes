@@ -23,6 +23,9 @@ class Graph{
         }
     }
 };
+bool isCycle(){
+
+}
 int main()
 {
     int n, m;
@@ -38,4 +41,10 @@ int main()
         g.addEdge(u, v);
     }
     g.print();
+    int srcNode = 4;
+    bool ans = isCycle(srcNode,);
+    if(ans)
+    cout << "Cycle is present"<< endl;
+    else
+    cout <<"Not Present" << endl;
 }
